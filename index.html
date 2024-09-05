@@ -1,225 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>M. Malik Hanafi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Malik Hanafi</title>
     <link rel="Icon" href="Icon.png">
-	<style type="text/css">
-		body {
-			background-color: rgb(64, 64, 64);
-		}
-		p {
-			font-family:sans-serif;
-		}
-		.profile-picture {
-			border-radius: 50%;
-			width: 40%;
-			height: 40%;
-			position:relative;
-			left:50%;
-			transform:translate(-50%);
-			margin-bottom: 20px;
-			box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1), 0 0 30px 10px rgba(64, 64, 64, 0.9);
-		}
-		.identitas {
-			width:auto;
-			height:auto;
-			background-color:grey;
-			border-radius:10px;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-			margin-left:10px;
-			margin-right:10px;
-		}
-		.identitas p, h2 {
-			text-align:center;
-			margin-bottom:10px;
-			color:white;
-		}
-		.identitas a {
-			text-decoration:none;
-			color:white;
-			transition:ease-in-out 0.8s;
-		}
-		.identitas a:hover {
-			color:grey;
-		}
-        .all {
-            background-color: transparent;
-        }
-		.about {
-			width:auto;
-			height:auto;
-			background-color:#333333;
-			border-radius:10px;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-			transition: background-color 0.3s, transform 0.3s;
-			margin-left:10px;
-			margin-right:10px;
-		}
-		.about p {
-			text-align:center;
-		}
-		.about a {
-			color:white;
-			transition:ease-in-out 0.8s;
-		}
-		.about a:hover {
-			color:grey;
-		}
-        .kopi {
-            width:auto;
-            height:auto;
-            background-color:#333333;
-            border-radius:10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s, transform 0.3s;
-            margin-left:10px;
-            margin-right:10px;
-        }
-        .kopi p {
-            text-align:center;
-        }
-        .kopi a {
-            color:white;
-            transition:ease-in-out 0.8s;
-        }
-        .kopi a:hover {
-            color:grey;
-        }
-		.quote {
-			width:auto;
-			height:auto;
-			border-radius:10px;
-			background-color:#333333;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-			color:white;
-			transition: background-color 0.3s, transform 0.3s;
-			margin-left:10px;
-			margin-right:10px;
-		}
-		.contact-me {
-			margin-top: 40px;
-			text-align: center;
-		}
-		
-		.contact-me h2 {
-			font-size: 1.5em;
-			margin-bottom: 20px;
-		}
-		
-		.contact-info {
-			display: flex;
-			flex-direction: column;
-			gap: 10px;
-			align-items: center;
-			margin-left:10px;
-			margin-right:10px;
-		}
-		
-		.contact-info a {
-			text-decoration: none;
-			color: #ffffff;
-			margin-left:20px;
-			margin-right:20px;
-			font-size:15px;
-			display: flex;
-			align-items: center;
-			gap: 10px;
-			height:100px;
-			background-color: #333333;
-			border-radius: 5px;
-			transition: background-color 0.3s, transform 0.3s;
-			width: 100%;
-			float: left;/* Menempatkan ikon di sebelah kiri */
-		}
-		
-		.contact-info a:hover {
-			background-color: #555555;
-			transform: scale(1.05);
-		}
-		
-		.contact-info img {
-			width: 40px;
-			height: 40px;
-		}
-		#id {
-			float: right;
-		}
-		}
-		#link {
-			text-decoration:underline;
-		}
-		#visibility {
-			visibility:hidden;
-		}
-		@media (max-width: 480px;) {
-			.contact-info a {
-				font-size: 50px;
-			}
-
-			.contact-info img {
-				width: 80px;
-				height: 80px;
-			}
-		}
-	</style>
+    <link rel="stylesheet" href="styles.css"> <!-- Connects to external CSS file -->
 </head>
 <body>
-	<header>
-		<div class="identitas"><br>
-			<img src="Alfie.jpeg" alt="Profile Picture" class="profile-picture">
-			<h2>M. Malik Hanafi</h2>
+    <header data-animation="animate-slide-up">
+        <div class="identity">
+            <img src="Alfie.jpeg" alt="Profile Picture" class="profile-picture hidden" data-animation="animate-fade-in">
+            <h2>M. Malik Hanafi</h2>
             <p>Stage Name: Alfie "Luxiona" Lexandra</p>
-			<p>Age: 16 years old</p>
-			<p id="visibility">Engaged to <a href="https://instagram.com/c_v.aurora/" style="font-family: serif;" id="link"><strong>Christy</strong></a></p>
-			<p>Working as a Cybersecurity professional at <strong>MachaaID</strong>.</p>
-			<p>(<strong style="color: darkred;">V</strong>isionary, <strong style="color: darkred;">I</strong>nspiring, <strong style="color: darkred;">P</strong>urposeful, <strong style="color: darkred;">E</strong>nterprising, <strong style="color: darkred;">R</strong>esourceful).</p>
-			<p>Drummer & 3rd vocalist of the band <a href="https://instagram.com/blaztbandofficial/" style="font-family: serif;" id="link"><strong>Blazt</strong></a></p><br>
-		</div><br>
-        <div class="all">
-            <p style="text-align: center; display: flex; justify-content: center; align-items: center; color: darkgrey;">\/ More \/</p>
-        </div><br>
-	</header>
-	
-	<main>
-		<div class="about" style="color: white;"><br>
-    		<h3 style="text-align: center;">Hi, I'm <strong>M. Malik Hanafi</strong></h3><br>
-    		<p><strong>Malik</strong> is a vocational high school student (<a href="http://www.smkn2bandung.id/">SMK</a>) who likes to develop the latest innovations in the world of <strong>music</strong> and <strong>digital</strong>. He has developed many things in the world of music such as <strong>how to play musical instruments</strong> to doing <strong>brutal</strong> vocal techniques (metal scream). In the <strong>digital</strong> world, he is very fond of making <strong>game mods</strong> but does not publish them because he thinks that it is a <strong>detrimental action</strong>. Everything that <strong>Malik</strong> has done aims to create an <strong>advanced nation</strong> in the <strong>music world</strong> and <strong>digital world</strong>, and the money he gets is always <strong>donated</strong> as much as 75% to people who <strong>need</strong>.</p><br>
-    		<p>Malik is not your typical vocational high school student. Behind his uniform, he hides the soul of a <strong>young innovator</strong> full of <strong>spirit</strong> and <strong>dedication</strong>. Malik has an extraordinary passion for developing innovations in two fields: <strong>music</strong> and <strong>digital</strong>.</p><br>
-    		<p>Music is like air for Malik. He not only enjoys the melody, but also explores its various aspects. <strong>Malik</strong> does not hesitate to learn various ways to play <strong>musical instruments</strong>, even honing <strong>brutal vocal</strong> techniques such as <strong>metal scream</strong>. His interest does not stop there. Malik also has a talent for creating his own <strong>musical works</strong>. He pours out his <strong>creative</strong> and <strong>innovative</strong> ideas through captivating <strong>melodies</strong> and <strong>lyrics</strong>.</p><br>
-    		<p>In the <strong>digital</strong> field, Malik has transformed into a <strong>reliable creator</strong>. He has <strong>expertise</strong> in making extraordinary <strong>game mods</strong>. His <strong>creativity</strong> is unquestionable, but he chooses not to <strong>publish</strong> his work. Malik has a strong principle that "<strong>the game mods he makes must not harm other parties</strong>".</p><br>
-    		<p>Malik has an extraordinary <strong>vision</strong>. He wants to advance the nation through his <strong>talents</strong> and <strong>expertise</strong> in the fields of <strong>music</strong> and <strong>digital</strong>. He believes that these two fields have <strong>great potential</strong> to bring <strong>positive change</strong> to the <strong>nation</strong>.</p><br>
-		</div><br>
+            <p>Age: 16 years old</p>
+            <p>Works as a <strong>Musician</strong>, <strong>Novelist</strong>, and <strong>Cybersecurity</strong> expert at <strong>MachaaID</strong>.</p>
+            <p>(<strong class="highlight">V</strong>isionary, <strong class="highlight">I</strong>nspiring, <strong class="highlight">P</strong>urposeful, <strong class="highlight">E</strong>nterprising, <strong class="highlight">R</strong>esourceful).</p>
+            <p>Drummer & 3rd vocalist of the band <a href="https://instagram.com/blaztbandofficial/" id="link" style="color: white; text-decoration: none;"><strong>Blazt</strong></a></p>
+        </div>
+    </header>
 
-		</div><br>
-		<div class="kopi" style="color: white;"><br>
-    		<h3 style="text-align: center;">Coffee Enthusiast</h3><br>
-    		<p><strong>Malik</strong> is also known as a <strong>true coffee connoisseur</strong>. His love for coffee is not just a regular drink, but has become <strong>part</strong> of his <strong>lifestyle</strong> and even a <strong>vessel</strong> for him to <strong>work</strong>.</p><br>
-    		<p>For Malik, coffee is not just about the <strong>boosting caffeine</strong>, but also about the <strong>taste</strong>, <strong>aroma</strong>, and <strong>experience</strong> it offers. He loves exploring different types of coffee, from strong robusta to smooth arabica. Every sip of coffee is like a taste adventure that always makes him curious.</p><br>
-    		<p>Malik often finds <strong>inspiration</strong> for his <strong>music</strong> while enjoying <strong>coffee</strong>. The calm atmosphere in a coffee shop, the soft strains of music, and the soothing aroma of coffee are like a blank canvas ready to be smeared with meaningful melodies and lyrics.</p><br>
-    		<p>In the digital world, <strong>coffee</strong> also becomes <strong>Malik's best friend</strong> in his <strong>creative process</strong>. When he is <strong>struggling</strong> with <strong>programming</strong> codes, <strong>coffee</strong> helps him to stay <strong>awake</strong> and <strong>focused</strong>, so that he can <strong>finish his work</strong> more <strong>effectively</strong>.</p><br>
-		</div><br>
+    <main>
+        <div class="about" data-animation="animate-slide-left">
+            <h3 style="text-align:center;">Hi, I'm <strong>M. Malik Hanafi</strong></h3><br>
+            <p><strong>Malik</strong> is a vocational high school student (<a href="http://www.smkn2bandung.id/" style="color: white; text-decoration: none;"><strong>SMK</strong></a>) who enjoys developing new innovations in the world of <strong>music</strong> and <strong>digital technology</strong>. He has developed many things in the music world, such as <strong>playing musical instruments</strong> and mastering <strong>brutal vocal techniques</strong> (metal scream). In the <strong>digital world</strong>, he loves creating <strong>game mods</strong> but chooses not to publish them because he believes it is a <strong>harmful action</strong>. Everything <strong>Malik</strong> does is aimed at creating a <strong>progressive nation</strong> in the <strong>music</strong> and <strong>digital world</strong>, and 75% of his earnings are always <strong>donated</strong> to those in need.</p><br>
+            <p>Malik is not your typical vocational student. Beneath his uniform lies the soul of a <strong>young innovator</strong> filled with <strong>passion</strong> and <strong>dedication</strong>. Malik is exceptionally talented in developing innovations in two fields: <strong>music</strong> and <strong>digital technology</strong>.</p><br>
+            <p>Music is like air to Malik. He doesn't just enjoy the melodies but also dives deep into its various aspects. <strong>Malik</strong> is not hesitant to learn different ways of playing <strong>musical instruments</strong> and even perfect his <strong>brutal vocal techniques</strong>, like <strong>metal screams</strong>. His interest doesn’t stop there. Malik also has the talent to create his own <strong>musical works</strong>. He pours his <strong>creative</strong> and <strong>innovative</strong> ideas into captivating <strong>melodies</strong> and <strong>lyrics</strong>.</p><br>
+            <p>In the <strong>digital field</strong>, Malik becomes a <strong>skilled creator</strong>. He is highly proficient in creating exceptional <strong>game mods</strong>. His <strong>creativity</strong> is undeniable, yet he chooses not to <strong>publish</strong> his works. Malik has a firm principle that "<strong>the game mods he creates should not harm others</strong>".</p><br>
+            <p>Malik has an extraordinary <strong>vision</strong>. He aims to advance the <strong style="color: red;">nation</strong> through his <strong>talents</strong> and <strong>skills</strong> in both <strong>music</strong> and <strong>digital technology</strong>. He believes that these two fields hold <strong>great potential</strong> to bring about <strong>positive changes</strong> for the <strong>nation</strong>.</p><br>
+        </div>
 
-		<div class="quote"><br>
-			<blockquote><strong>Quote</strong>:</blockquote>
-			<blockquote>
-				"Be like a dreamer who not only dreams, but also acts with perseverance and tenacity. Do not let doubts and obstacles hinder your steps towards the dreams you hold dear. Every step you take is a journey that builds a bridge between reality and imagination. Let your heart be filled with unwavering passion and determination, so that your dreams will come true." ~<strong style="font-family: sans-serif;">Malik</strong>
-			</blockquote><br>
-		</div><br>
-	</main>
-	<footer>
-		<div class="contact-me">
-			<h2>Contact Me</h2>
-			<div class="contact-info">
-				<a href="https://Instagram.com/alluxndra" style="font-family:serif;"  target="_blank"><br>
-				<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">@Alluxndra <p id="info">(Social Media Accounts)</p>
-				</a>
-				<a href="mailto:alfielexa@proton.me" style="font-family:serif;" ><br>
-				<img src="https://www.svgrepo.com/show/452213/gmail.svg" alt="Email">   alfielexa@proton.me 
-				<p id="info">(Business)</p>
-				</a>
-			</div><br>
-		<p style="color: darkgrey; text-align: center;" >&copy; 2024 M. Malik Hanafi</p>
-		</div>
-	</footer>
+        <div class="coffee" data-animation="animate-slide-right">
+            <h3 style="text-align: center;">Coffee Enthusiast</h3><br>
+            <p><strong>Malik</strong> is also known as a <strong>true coffee lover</strong>. His love for coffee isn’t just about an ordinary drink; it has become <strong>part</strong> of his <strong>lifestyle</strong> and even a <strong>medium</strong> for him to <strong>create</strong>.</p><br>
+            <p>For Malik, <strong>coffee</strong> is not just about the <strong>caffeine boost</strong>, but also about the <strong>taste</strong>, <strong>aroma</strong>, and <strong>experience</strong> it offers. He enjoys exploring different kinds of coffee, from strong robusta to smooth arabica. Every sip of coffee is like a flavor adventure that always leaves him curious.</p><br>
+            <p>Malik often finds <strong>inspiration</strong> for his <strong>music</strong> while enjoying <strong>coffee</strong>. The calm atmosphere in a coffee shop, the soft background music, and the soothing aroma of coffee act like a blank canvas ready to be filled with meaningful melodies and lyrics.</p><br>
+            <p>In the digital world, <strong>coffee</strong> is also <strong>Malik's companion</strong> during his <strong>creative process</strong>. While he’s <strong>working on coding</strong>, <strong>coffee</strong> helps him stay <strong>alert</strong> and <strong>focused</strong>, allowing him to complete his <strong>tasks</strong> more <strong>efficiently</strong>.</p><br>
+        </div>
+
+        <div class="project" data-animation="animate-slide-up">
+            <h3>Projects Malik Has Worked On</h3>
+            <p><strong>Malik</strong> has worked on <strong>numerous projects</strong> that are closely <strong>related</strong> to both the <strong>digital world</strong> and the <strong>music world</strong>. Even though <strong>Malik</strong> has completed many projects, he has never <strong>published</strong> them due to various reasons like <strong>misplacing files</strong>, <strong>server errors</strong>, <strong>projects suddenly disappearing</strong>, etc.</p>
+            <p>Despite these challenges, <strong>Malik</strong> remains committed to advancing the <strong>nation</strong> in the <strong>music</strong> and <strong>digital world</strong> because his passion lies in these fields. <strong>Malik</strong> wants everyone to <strong>enjoy</strong> the work he has <strong>done so far</strong>.</p>
+        </div>
+
+        <div class="quote" data-animation="animate-fade-in">
+            <blockquote>
+                "Be like a dreamer who not only dreams but also takes action with perseverance and determination. Don't let doubts and obstacles hinder your steps towards the dreams you firmly hold. Each step is a journey that builds a bridge between reality and imagination. Let your heart be filled with unwavering passion and determination, so that your dreams will come true." ~<b><i>Malik</i></b>
+            </blockquote>
+        </div>
+    </main>
+
+    <footer data-animation="animate-slide-up">
+        <div class="contact">
+            <h2>Contact:</h2>
+            <div class="contact-info">
+                <a href="https://Instagram.com/alluxndra" target="_blank" class="hidden" data-animation="animate-fade-in">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> @Alluxndra
+                </a>
+                <a href="mailto:alfielexa@proton.me" class="hidden" data-animation="animate-fade-in">
+                    <img src="https://www.svgrepo.com/show/452213/gmail.svg" alt="Email"> alfielexa@proton.me
+                </a>
+            </div>
+        </div>
+        <p>&copy; 2024 M. Malik Hanafi</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
